@@ -2,3 +2,15 @@ module(
     name = "com_github_bcsgh_mime_type",
     version = "0.10.1",
 )
+
+#############################################
+bazel_dep(
+    name = "abseil-cpp", repo_name = "com_google_absl",
+    version = "20240116.2"
+)
+
+#############################################
+bazel_dep(
+    name = "googletest", repo_name = "com_google_googletest",
+    version = "1.15.2",
+)
